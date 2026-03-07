@@ -1,18 +1,31 @@
+import Image from "next/image"
+
 export function About() {
   return (
     <section id="about" className="bg-primary text-primary-foreground py-24 md:py-32">
       <div className="container mx-auto px-4 md:px-6">
         <div className="grid gap-16 lg:grid-cols-2 lg:gap-20 items-center">
-          {/* Image Placeholder */}
+          {/* Team Photos */}
           <div className="relative order-2 lg:order-1">
-            <div className="aspect-[4/3] rounded-2xl bg-primary-foreground/10 flex items-center justify-center overflow-hidden">
-              <div className="text-center p-8">
-                <div className="w-20 h-20 mx-auto mb-4 rounded-full bg-primary-foreground/10 flex items-center justify-center">
-                  <svg className="w-10 h-10 text-primary-foreground/70" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
-                  </svg>
-                </div>
-                <p className="text-primary-foreground/50 text-sm">תמונת הצוות</p>
+            <div className="grid gap-6 sm:grid-cols-2">
+              <div className="relative aspect-[3/4] rounded-2xl overflow-hidden bg-primary-foreground/10">
+                <Image
+                  src="/images/nadav.png"
+                  alt="נדב - שותף בצוות פסגה"
+                  fill
+                  className="object-cover"
+                  sizes="(min-width: 1024px) 240px, 50vw"
+                  priority
+                />
+              </div>
+              <div className="relative aspect-[3/4] rounded-2xl overflow-hidden bg-primary-foreground/10">
+                <Image
+                  src="/images/michel.png"
+                  alt="מיכאל - שותף בצוות פסגה"
+                  fill
+                  className="object-cover"
+                  sizes="(min-width: 1024px) 240px, 50vw"
+                />
               </div>
             </div>
           </div>
