@@ -1,10 +1,6 @@
 import type { Metadata } from 'next'
-import { Heebo, Geist_Mono } from 'next/font/google'
 
 import './globals.css'
-
-const _heebo = Heebo({ subsets: ["hebrew", "latin"] });
-const _geistMono = Geist_Mono({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: 'פסגה - מאגר מדריכי ומטמיעי מערכות מידע',
