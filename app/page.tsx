@@ -6,10 +6,12 @@ import { WhyUs } from "@/components/landing/why-us"
 import { Contact } from "@/components/landing/contact"
 import { Footer } from "@/components/landing/footer"
 import { AnimateOnScroll } from "@/components/landing/animate-on-scroll"
+import { ScrollToTop } from "@/components/landing/scroll-to-top"
 
 export default function Home() {
   return (
     <div className="min-h-screen flex flex-col bg-background">
+      <ScrollToTop />
       <Header />
       <main className="flex-1 flex flex-col">
         <Hero />

@@ -30,7 +30,7 @@ const advantages = [
 
 export function WhyUs() {
   return (
-    <section id="why-us" className="bg-white py-28 md:py-36">
+    <section id="why" className="bg-white py-28 md:py-36">
       <div className="container mx-auto px-4 md:px-6">
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16 md:mb-20">

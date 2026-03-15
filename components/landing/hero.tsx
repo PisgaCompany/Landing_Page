@@ -4,7 +4,7 @@ import { ArrowLeft } from "lucide-react"
 
 export function Hero() {
   return (
-    <section className="relative overflow-hidden bg-[#f9fbfd] pt-16 pb-24 md:pt-24 md:pb-32">
+    <section id="hero" className="relative overflow-hidden bg-[#f9fbfd] pt-16 pb-24 md:pt-24 md:pb-32">
       <div className="container mx-auto px-4 md:px-6">
         <div className="grid gap-12 lg:grid-cols-2 lg:gap-16 items-center">
           {/* Content */}

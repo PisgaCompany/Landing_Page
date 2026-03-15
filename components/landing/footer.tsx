@@ -2,7 +2,7 @@ import { SocialLinksFooter } from "./social-links"
 
 const footerLinks = [
   { label: "מה אנחנו עושים", href: "#services" },
-  { label: "למה לעבוד איתנו", href: "#why-us" },
+  { label: "למה לעבוד איתנו", href: "#why" },
   { label: "מי אנחנו", href: "#about" },
   { label: "יצירת קשר", href: "#contact" },
 ]

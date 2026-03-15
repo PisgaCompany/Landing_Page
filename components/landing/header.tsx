@@ -24,7 +24,7 @@ export function Header() {
             <a href="#services" className={navLinkClass}>
               מה אנחנו עושים
             </a>
-            <a href="#why-us" className={navLinkClass}>
+            <a href="#why" className={navLinkClass}>
               למה לעבוד איתנו
             </a>
             <a href="#about" className={navLinkClass}>
@@ -59,7 +59,7 @@ export function Header() {
             <a href="#services" className="min-h-[48px] flex items-center py-3 text-[1.0625rem] font-semibold text-foreground hover:text-[#2b6cb0] transition-colors -mx-4 px-4 rounded-lg active:bg-muted/50" onClick={() => setMobileMenuOpen(false)}>
               מה אנחנו עושים
             </a>
-            <a href="#why-us" className="min-h-[48px] flex items-center py-3 text-[1.0625rem] font-semibold text-foreground hover:text-[#2b6cb0] transition-colors -mx-4 px-4 rounded-lg active:bg-muted/50" onClick={() => setMobileMenuOpen(false)}>
+            <a href="#why" className="min-h-[48px] flex items-center py-3 text-[1.0625rem] font-semibold text-foreground hover:text-[#2b6cb0] transition-colors -mx-4 px-4 rounded-lg active:bg-muted/50" onClick={() => setMobileMenuOpen(false)}>
               למה לעבוד איתנו
             </a>
             <a href="#about" className="min-h-[48px] flex items-center py-3 text-[1.0625rem] font-semibold text-foreground hover:text-[#2b6cb0] transition-colors -mx-4 px-4 rounded-lg active:bg-muted/50" onClick={() => setMobileMenuOpen(false)}>
