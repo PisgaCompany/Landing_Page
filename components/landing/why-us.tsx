@@ -9,7 +9,7 @@ const advantages = [
   {
     icon: Target,
     title: "התאמה ממוקדת לדרישות הפרויקט",
-    description: "ההתאמה מתבצעת לפי ניסיון מקצועי, סוגי מערכות, אזור גיאוגרפי וזמינות.",
+    description: "ההתאמה מתבצעת לפי ניסיון מקצועי, ידע במערכות, אזור גיאוגרפי וזמינות.",
   },
   {
     icon: Building2,
@@ -19,12 +19,12 @@ const advantages = [
   {
     icon: Zap,
     title: "קיצור שלב הגיוס הראשוני",
-    description: "אין צורך להתחיל תהליך איתור מאפס. שלב הסינון הראשוני כבר בוצע מראש.",
+    description: "שלב הסינון הראשוני כבר בוצע מראש.",
   },
   {
     icon: CheckCircle,
-    title: "צמצום פשרות איכות תחת לחץ זמן",
-    description: "המאגר מאפשר בחינת מועמדים רלוונטיים גם כאשר לוחות הזמנים קצרים.",
+    title: "איכות ללא פשרות - גם שצריך לגייס מהר",
+    description: "בחירה מהירה של מועמדים איכותיים מתאימים לפרויקט",
   },
 ]
 
@@ -34,11 +34,8 @@ export function WhyUs() {
       <div className="container mx-auto px-4 md:px-6">
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16 md:mb-20">
-          <p className="text-sm font-medium text-muted-foreground uppercase tracking-wider mb-4">
-            היתרונות שלנו
-          </p>
           <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl md:text-5xl">
-            למה כדאי לעבוד איתנו
+            התאמה ממוקדת לדרישות התפקיד
           </h2>
         </div>
 
@@ -47,7 +44,7 @@ export function WhyUs() {
           {advantages.map((advantage, index) => (
             <div
               key={index}
-              className="group relative p-8 rounded-2xl bg-card border border-border hover:border-primary/30 hover:shadow-lg transition-all duration-300"
+              className="group relative p-6 rounded-xl bg-card border border-border shadow-lg hover:shadow-xl hover:border-primary/30 transition-all duration-300"
             >
               {/* Icon */}
               <div className="h-12 w-12 rounded-xl bg-primary/10 flex items-center justify-center mb-6">

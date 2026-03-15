@@ -5,6 +5,7 @@ import { About } from "@/components/landing/about"
 import { WhyUs } from "@/components/landing/why-us"
 import { Contact } from "@/components/landing/contact"
 import { Footer } from "@/components/landing/footer"
+import { AnimateOnScroll } from "@/components/landing/animate-on-scroll"
 
 export default function Home() {
   return (
@@ -12,10 +13,18 @@ export default function Home() {
       <Header />
       <main>
         <Hero />
-        <Services />
-        <WhyUs />
-        <About />
-        <Contact />
+        <AnimateOnScroll>
+          <Services />
+        </AnimateOnScroll>
+        <AnimateOnScroll>
+          <WhyUs />
+        </AnimateOnScroll>
+        <AnimateOnScroll>
+          <About />
+        </AnimateOnScroll>
+        <AnimateOnScroll>
+          <Contact />
+        </AnimateOnScroll>
       </main>
       <Footer />
     </div>

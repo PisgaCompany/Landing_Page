@@ -12,9 +12,6 @@ export function Services() {
       <div className="container mx-auto px-4 md:px-6">
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16 md:mb-20">
-          <p className="text-sm font-medium text-muted-foreground uppercase tracking-wider mb-4">
-            השירותים שלנו
-          </p>
           <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl md:text-5xl">
             מה אנחנו עושים
           </h2>
@@ -24,7 +21,7 @@ export function Services() {
           {/* Main Content */}
           <div className="space-y-6">
             <p className="text-lg text-foreground leading-relaxed">
-              אנו מאתרים, מכשירים ומנהלים מאגר של מדריכי/מטמיעי מערכות מידע המיועדים לשילוב בפרויקטים ארגוניים.
+              אנו מאתרים, מכשירים ומנהלים מאגר של מדריכי/מטמיעי מערכות מידע המיועדים לשילוב בתפקידים בארגונים.
             </p>
             <p className="text-muted-foreground leading-relaxed">
               המאגר שלנו בנוי מבעלי ניסיון הדרכתי מוכח ומיוצאי צבא עם DNA מקצועי המתאים לעבודה בארגונים גדולים – עמידה מול קהל, עבודה עם מערכות ארגוניות מורכבות, ויכולת כניסה מהירה לפרויקטים.
@@ -32,15 +29,15 @@ export function Services() {
 
             {/* Visual Icons */}
             <div className="grid grid-cols-3 gap-4 pt-6">
-              <div className="flex flex-col items-center text-center p-4 rounded-xl bg-card border border-border">
+              <div className="flex flex-col items-center text-center p-6 rounded-xl bg-card border border-border shadow-lg hover:shadow-xl transition-shadow duration-300">
                 <Users className="h-8 w-8 text-primary mb-3" />
                 <span className="text-sm font-medium text-foreground">איתור מועמדים</span>
               </div>
-              <div className="flex flex-col items-center text-center p-4 rounded-xl bg-card border border-border">
+              <div className="flex flex-col items-center text-center p-6 rounded-xl bg-card border border-border shadow-lg hover:shadow-xl transition-shadow duration-300">
                 <GraduationCap className="h-8 w-8 text-primary mb-3" />
                 <span className="text-sm font-medium text-foreground">הכשרה מקצועית</span>
               </div>
-              <div className="flex flex-col items-center text-center p-4 rounded-xl bg-card border border-border">
+              <div className="flex flex-col items-center text-center p-6 rounded-xl bg-card border border-border shadow-lg hover:shadow-xl transition-shadow duration-300">
                 <FileCheck className="h-8 w-8 text-primary mb-3" />
                 <span className="text-sm font-medium text-foreground">ניהול המאגר</span>
               </div>
@@ -48,7 +45,7 @@ export function Services() {
           </div>
 
           {/* Bullet Points Card */}
-          <div className="bg-card rounded-2xl border border-border p-8 md:p-10">
+          <div className="bg-card rounded-xl border border-border p-6 shadow-lg hover:shadow-xl transition-shadow duration-300">
             <h3 className="text-xl font-semibold text-foreground mb-6">
               כל מועמד במאגר:
             </h3>
