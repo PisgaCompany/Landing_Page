@@ -9,9 +9,9 @@ import { AnimateOnScroll } from "@/components/landing/animate-on-scroll"
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen flex flex-col bg-background">
       <Header />
-      <main>
+      <main className="flex-1 flex flex-col">
         <Hero />
         <AnimateOnScroll>
           <Services />
