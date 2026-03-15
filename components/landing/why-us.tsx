@@ -30,11 +30,11 @@ const advantages = [
 
 export function WhyUs() {
   return (
-    <section id="why-us" className="bg-background py-24 md:py-32">
+    <section id="why-us" className="bg-white py-28 md:py-36">
       <div className="container mx-auto px-4 md:px-6">
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16 md:mb-20">
-          <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl md:text-5xl">
+          <h2 className="text-4xl font-bold tracking-tight text-foreground md:text-5xl lg:text-[3rem]">
             התאמה ממוקדת לדרישות התפקיד
           </h2>
         </div>
@@ -44,7 +44,7 @@ export function WhyUs() {
           {advantages.map((advantage, index) => (
             <div
               key={index}
-              className="group relative p-6 rounded-xl bg-card border border-border shadow-lg hover:shadow-xl hover:border-primary/30 transition-all duration-300"
+              className="group relative p-6 rounded-[12px] bg-white shadow-md hover:shadow-lg hover:border-primary/30 border border-border transition-all duration-300"
             >
               {/* Icon */}
               <div className="h-12 w-12 rounded-xl bg-primary/10 flex items-center justify-center mb-6">

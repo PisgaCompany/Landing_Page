@@ -7,12 +7,12 @@ const SOCIAL_LINKS = [
   { href: "https://www.facebook.com/share/1ArBKgcRK9/?mibextid=wwXIfr", Icon: Facebook, label: "Facebook" },
 ] as const
 
-const iconSize = 22
-const iconClass = "h-[22px] w-[22px] transition-colors hover:opacity-80 cursor-pointer"
+const iconSize = 18
+const iconClass = "h-[18px] w-[18px] transition-colors cursor-pointer"
 
 export function SocialLinks({ className = "" }: { className?: string }) {
   return (
-    <div className={`flex items-center gap-4 ${className}`}>
+    <div className={`flex items-center gap-3 ${className}`}>
       {SOCIAL_LINKS.map(({ href, Icon, label }) => (
         <a
           key={label}
@@ -20,7 +20,7 @@ export function SocialLinks({ className = "" }: { className?: string }) {
           target="_blank"
           rel="noopener noreferrer"
           aria-label={label}
-          className="text-muted-foreground hover:text-foreground transition-colors"
+          className="min-w-[44px] min-h-[44px] flex items-center justify-center rounded-lg text-[#9ca3af] hover:text-[#2b6cb0] transition-colors"
         >
           <Icon className={iconClass} size={iconSize} />
         </a>
@@ -39,7 +39,7 @@ export function SocialLinksFooter({ className = "" }: { className?: string }) {
           target="_blank"
           rel="noopener noreferrer"
           aria-label={label}
-          className="text-primary-foreground/80 hover:text-primary-foreground transition-colors"
+          className="flex items-center justify-center min-w-[44px] min-h-[44px] rounded-lg text-primary-foreground/80 hover:text-[#2b6cb0] transition-colors"
         >
           <Icon className={iconClass} size={iconSize} />
         </a>

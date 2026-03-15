@@ -8,11 +8,11 @@ const bulletPoints = [
 
 export function Services() {
   return (
-    <section id="services" className="bg-secondary/30 py-24 md:py-32">
+    <section id="services" className="bg-[#eef5fb] py-28 md:py-36">
       <div className="container mx-auto px-4 md:px-6">
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16 md:mb-20">
-          <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl md:text-5xl">
+          <h2 className="text-4xl font-bold tracking-tight text-foreground md:text-5xl lg:text-[3rem]">
             מה אנחנו עושים
           </h2>
         </div>
@@ -29,15 +29,15 @@ export function Services() {
 
             {/* Visual Icons */}
             <div className="grid grid-cols-3 gap-4 pt-6">
-              <div className="flex flex-col items-center text-center p-6 rounded-xl bg-card border border-border shadow-lg hover:shadow-xl transition-shadow duration-300">
+              <div className="flex flex-col items-center text-center p-6 rounded-[12px] bg-white shadow-md hover:shadow-lg transition-shadow duration-300">
                 <Users className="h-8 w-8 text-primary mb-3" />
                 <span className="text-sm font-medium text-foreground">איתור מועמדים</span>
               </div>
-              <div className="flex flex-col items-center text-center p-6 rounded-xl bg-card border border-border shadow-lg hover:shadow-xl transition-shadow duration-300">
+              <div className="flex flex-col items-center text-center p-6 rounded-[12px] bg-white shadow-md hover:shadow-lg transition-shadow duration-300">
                 <GraduationCap className="h-8 w-8 text-primary mb-3" />
                 <span className="text-sm font-medium text-foreground">הכשרה מקצועית</span>
               </div>
-              <div className="flex flex-col items-center text-center p-6 rounded-xl bg-card border border-border shadow-lg hover:shadow-xl transition-shadow duration-300">
+              <div className="flex flex-col items-center text-center p-6 rounded-[12px] bg-white shadow-md hover:shadow-lg transition-shadow duration-300">
                 <FileCheck className="h-8 w-8 text-primary mb-3" />
                 <span className="text-sm font-medium text-foreground">ניהול המאגר</span>
               </div>
@@ -45,7 +45,7 @@ export function Services() {
           </div>
 
           {/* Bullet Points Card */}
-          <div className="bg-card rounded-xl border border-border p-6 shadow-lg hover:shadow-xl transition-shadow duration-300">
+          <div className="bg-white rounded-[12px] p-6 shadow-md hover:shadow-lg transition-shadow duration-300">
             <h3 className="text-xl font-semibold text-foreground mb-6">
               כל מועמד במאגר:
             </h3>

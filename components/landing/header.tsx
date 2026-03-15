@@ -1,46 +1,40 @@
 "use client"
 
 import { useState } from "react"
-import Image from "next/image"
-import { Menu, X, ArrowLeft } from "lucide-react"
-import { Button } from "@/components/ui/button"
+import { Menu, X } from "lucide-react"
 import { SocialLinks } from "./social-links"
+
+const navLinkClass =
+  "text-[1.0625rem] font-bold text-[#1f2937] hover:text-[#2b6cb0] transition-colors duration-200 relative after:content-[''] after:absolute after:bottom-0 after:right-0 after:h-0.5 after:bg-[#2b6cb0] after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-200 after:origin-left"
 
 export function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   return (
-    <header className="sticky top-0 z-50 w-full bg-background/80 backdrop-blur-xl">
-      <div className="container mx-auto flex h-20 items-center justify-between px-4 md:px-6">
-        {/* Logo */}
-        <a href="#" className="flex items-center">
-          <Image
-            src="/images/logo-pisga.png"
-            alt="פסגה לוגו"
-            width={48}
-            height={48}
-            className="h-12 w-auto"
-          />
-        </a>
+    <header className="sticky top-0 z-50 w-full h-[70px] bg-white shadow-sm flex items-center">
+      <div className="container mx-auto flex h-full items-center justify-between px-4 md:px-6 relative">
+        {/* Spacer - keeps nav centered (right side in RTL) */}
+        <div className="flex-1 hidden md:block" />
+        <div className="md:hidden flex-1" />
 
-        {/* Desktop Navigation */}
-        <nav className="hidden md:flex items-center gap-10">
-          <a href="#services" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
+        {/* Desktop Navigation - centered */}
+        <nav className="hidden md:flex items-center gap-10 flex-1 justify-center">
+          <a href="#services" className={navLinkClass}>
             מה אנחנו עושים
           </a>
-          <a href="#why-us" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
+          <a href="#why-us" className={navLinkClass}>
             למה לעבוד איתנו
           </a>
-          <a href="#about" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
+          <a href="#about" className={navLinkClass}>
             מי אנחנו
           </a>
-          <a href="#contact" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
+          <a href="#contact" className={navLinkClass}>
             יצירת קשר
           </a>
         </nav>
 
-        {/* Social Icons (right side in RTL = Instagram, Facebook, LinkedIn) */}
-        <div className="hidden md:flex items-center gap-4">
+        {/* Social Icons - left side of header in RTL */}
+        <div className="hidden md:flex items-center gap-3 flex-1 justify-start">
           <SocialLinks />
         </div>
 
@@ -56,18 +50,18 @@ export function Header() {
 
       {/* Mobile Navigation */}
       {mobileMenuOpen && (
-        <div className="md:hidden bg-background border-t border-border">
+        <div className="md:hidden bg-white border-t border-border shadow-md">
           <nav className="container mx-auto flex flex-col gap-1 px-4 py-6">
-            <a href="#services" className="py-3 text-base font-medium text-foreground hover:text-muted-foreground transition-colors" onClick={() => setMobileMenuOpen(false)}>
+            <a href="#services" className="py-3 text-[1.0625rem] font-bold text-foreground hover:text-[#2b6cb0] transition-colors" onClick={() => setMobileMenuOpen(false)}>
               מה אנחנו עושים
             </a>
-            <a href="#why-us" className="py-3 text-base font-medium text-foreground hover:text-muted-foreground transition-colors" onClick={() => setMobileMenuOpen(false)}>
+            <a href="#why-us" className="py-3 text-[1.0625rem] font-bold text-foreground hover:text-[#2b6cb0] transition-colors" onClick={() => setMobileMenuOpen(false)}>
               למה לעבוד איתנו
             </a>
-            <a href="#about" className="py-3 text-base font-medium text-foreground hover:text-muted-foreground transition-colors" onClick={() => setMobileMenuOpen(false)}>
+            <a href="#about" className="py-3 text-[1.0625rem] font-bold text-foreground hover:text-[#2b6cb0] transition-colors" onClick={() => setMobileMenuOpen(false)}>
               מי אנחנו
             </a>
-            <a href="#contact" className="py-3 text-base font-medium text-foreground hover:text-muted-foreground transition-colors" onClick={() => setMobileMenuOpen(false)}>
+            <a href="#contact" className="py-3 text-[1.0625rem] font-bold text-foreground hover:text-[#2b6cb0] transition-colors" onClick={() => setMobileMenuOpen(false)}>
               יצירת קשר
             </a>
             <div className="mt-4 pt-4 border-t border-border">

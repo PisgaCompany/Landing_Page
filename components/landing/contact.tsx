@@ -35,11 +35,11 @@ export function Contact() {
   }
 
   return (
-    <section id="contact" className="bg-secondary/30 py-24 md:py-32">
+    <section id="contact" className="bg-white py-28 md:py-36">
       <div className="container mx-auto px-4 md:px-6">
         <div className="grid gap-16 lg:grid-cols-2 lg:gap-20 items-start">
           <div className="lg:sticky lg:top-32">
-            <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl md:text-5xl mb-6">
+            <h2 className="text-4xl font-bold tracking-tight text-foreground md:text-5xl lg:text-[3rem] mb-6">
               צרו קשר למציאת מדריכים מתאימים
             </h2>
             <p className="text-muted-foreground text-lg leading-relaxed mb-8">
@@ -49,7 +49,7 @@ export function Contact() {
 
           <div>
             {status === "success" ? (
-              <div className="bg-card rounded-xl border border-border p-8 md:p-10 text-center">
+              <div className="bg-white rounded-[12px] shadow-md border border-border p-8 md:p-10 text-center">
                 <p className="text-lg font-medium text-foreground">
                   הפרטים נשלחו בהצלחה. נחזור אליכם בהקדם.
                 </p>
@@ -59,7 +59,7 @@ export function Contact() {
                 action={FORMSPREE_ENDPOINT}
                 method="POST"
                 onSubmit={handleSubmit}
-                className="bg-card rounded-xl border border-border p-6 md:p-8 space-y-6 shadow-lg"
+                className="bg-white rounded-[12px] border border-border p-6 md:p-8 space-y-6 shadow-md"
               >
                 <div className="grid gap-6 sm:grid-cols-2">
                   <div className="space-y-2">
@@ -139,7 +139,7 @@ export function Contact() {
                 <Button
                   type="submit"
                   disabled={status === "submitting"}
-                  className="w-full rounded-full h-14 text-base font-medium"
+                  className="w-full rounded-full h-14 text-base font-medium bg-[#2b6cb0] hover:bg-[#2563eb]"
                   size="lg"
                 >
                   {status === "submitting" ? "שולח..." : "שלח פנייה"}
