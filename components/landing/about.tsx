@@ -20,7 +20,7 @@ export function About() {
               </div>
               <div className="relative aspect-[3/4] rounded-2xl overflow-hidden bg-white/60">
                 <Image
-                  src="/images/michel.png"
+                  src="/images/michael-new.jpg"
                   alt="מיכאל - שותף בצוות פסגה"
                   fill
                   className="object-cover"
