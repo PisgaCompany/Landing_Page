@@ -1,11 +1,18 @@
-import type { Metadata } from 'next'
-
 import './globals.css'
 
-export const metadata: Metadata = {
-  title: 'פסגה - מאגר מדריכי ומטמיעי מערכות מידע',
-  description: 'מאגר מדריכי ומטמיעי מערכות מידע לפרויקטים ארגוניים - פתרון ממוקד לחברות מיקור חוץ וארגונים',
-  generator: 'v0.app',
+export const metadata = {
+  title: "פסגה - פתרונות הדרכה והטמעה לארגונים מובילים",
+  description: "מאגר מדריכים ומטמיעים מקצועיים לפרויקטים טכנולוגיים",
+  openGraph: {
+    title: "פסגה - פתרונות הדרכה והטמעה לארגונים מובילים",
+    description: "מאגר מדריכים ומטמיעים מקצועיים לפרויקטים טכנולוגיים",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "פסגה - פתרונות הדרכה והטמעה לארגונים מובילים",
+    description: "מאגר מדריכים ומטמיעים מקצועיים לפרויקטים טכנולוגיים",
+  },
   icons: {
     icon: '/pisga-icon.png',
     apple: '/pisga-icon.png',
