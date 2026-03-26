@@ -1,3 +1,4 @@
+import Head from "next/head"
 import { Header } from "@/components/landing/header"
 import { Hero } from "@/components/landing/hero"
 import { Services } from "@/components/landing/services"
@@ -11,6 +12,12 @@ import { ScrollToTop } from "@/components/landing/scroll-to-top"
 export default function Home() {
   return (
     <div className="min-h-screen flex flex-col bg-background">
+      <Head>
+        <title>פסגה - פתרונות הדרכה והטמעה לארגונים מובילים</title>
+        <meta name="description" content="מאגר מדריכים ומטמיעים מקצועיים לפרויקטים טכנולוגיים" />
+        <meta property="og:title" content="פסגה - פתרונות הדרכה והטמעה לארגונים מובילים" />
+        <meta property="og:description" content="מאגר מדריכים ומטמיעים מקצועיים לפרויקטים טכנולוגיים" />
+      </Head>
       <ScrollToTop />
       <Header />
       <main className="flex-1 flex flex-col">

@@ -2,9 +2,9 @@ import { Instagram, Facebook, Linkedin } from "lucide-react"
 
 const SOCIAL_LINKS = [
   // RTL visual order (right -> left): Instagram, LinkedIn, Facebook
-  { href: "https://www.instagram.com/pisga.training/", Icon: Instagram, label: "Instagram" },
+  { href: "https://www.instagram.com/pisga.training?igsh=MTBxMzF1ZmlpYXMxcQ%3D%3D&utm_source=qr", Icon: Instagram, label: "Instagram" },
   { href: "https://www.linkedin.com/in/nadavcohen8", Icon: Linkedin, label: "LinkedIn" },
-  { href: "https://www.facebook.com/share/1ArBKgcRK9/?mibextid=wwXIfr", Icon: Facebook, label: "Facebook" },
+  { href: "https://www.facebook.com/share/1GAtifDLnA/?mibextid=wwXIfr", Icon: Facebook, label: "Facebook" },
 ] as const
 
 const iconSize = 18
