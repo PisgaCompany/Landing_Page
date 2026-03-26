@@ -35,7 +35,7 @@ export function WhyUs() {
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16 md:mb-20">
           <h2 className="text-4xl font-bold tracking-tight text-foreground md:text-5xl lg:text-[3rem]">
-            התאמה ממוקדת לדרישות התפקיד
+            למה לעבוד איתנו
           </h2>
         </div>
 
